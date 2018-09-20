@@ -62,4 +62,26 @@ INSERT INTO playlist VALUES
   aname VARCHAR(64),
   ahref VARCHAR(256) NOT NULL,
   aimg VARCHAR(256)*/
-INSERT INTO album VALUES (1,)
+INSERT INTO album VALUES 
+(1,"飞行器的执行周期","https://music.163.com/#/album?id=35005583","http://p3.music.126.net/wSMfGvFzOAYRU_yVIfquAA==/2946691248081599.jpg?param=177y177"),
+(2,"请接来电","https://music.163.com/#/album?id=73232902","http://p3.music.126.net/IM4HHhsiykg1dBQR6d9N6g==/109951163544997907.jpg?param=177y177"),
+(3,"Down Easy (Remixes / Pt.1)","https://music.163.com/#/album?id=73111943","http://p3.music.126.net/EVVYvFlWE4Ssk8b-s6rnjw==/109951163538000067.jpg?param=177y177"),
+(4,"Riot (Lo Lo Loco)","https://music.163.com/#/album?id=72986221","http://p4.music.126.net/kxSGhqphaCN_WzeB0aLf7Q==/109951163533679974.jpg?param=177y177"),
+(5,"Let It Go","https://music.163.com/#/album?id=72790862","http://p4.music.126.net/mKLwUZI5Vik-oli-2UNe-g==/109951163526317240.jpg?param=177y177"),
+(6,"秒針を噛む","https://music.163.com/#/album?id=72777124","http://p4.music.126.net/UN98kY_QUPm4sSMMdE92TQ==/109951163523587547.jpg?param=177y177"),
+(7,"Summer Romance","https://music.163.com/#/album?id=72327609","http://p4.music.126.net/yWQti_fUB3GHqd9rDBuY7w==/109951163461808821.jpg?param=177y177"),
+(8,"Big Love","https://music.163.com/#/album?id=73258333","http://p4.music.126.net/-7hPFP7MZdGZEYKuolqTFQ==/109951163546086836.jpg?param=177y177"),
+(9,"徐梦圆 同名专辑","https://music.163.com/#/album?id=37869047","http://p3.music.126.net/9cySfhHshoKksSkAxwVVqw==/109951163175751210.jpg?param=177y177"),
+(10,"Rashisa no Arika","https://music.163.com/#/album?id=2084449","http://p3.music.126.net/HTBhGDKBgKtwVNEkHFsipQ==/772956674348841.jpg?param=177y177");
+
+/*
+  rid SMALLINT PRIMARY KEY AUTO_INCREMENT,
+  rname VARCHAR(64),
+  rhref VARCHAR(256) NOT NULL,
+  rimg VARCHAR(256)
+*/
+INSERT INTO rank VALUES 
+(1,"云音乐飙升榜","https://music.163.com/#/discover/toplist?id=19723756","http://p1.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=150y150"),
+(2,"云音乐新歌榜","https://music.163.com/#/discover/toplist?id=3779629","http://p1.music.126.net/N2HO5xfYEqyQ8q6oxCw8IQ==/18713687906568048.jpg?param=150y150"),
+(3,"网易原创歌曲榜","https://music.163.com/#/discover/toplist?id=2884035","http://p1.music.126.net/sBzD11nforcuh1jdLSgX7g==/18740076185638788.jpg?param=150y150"),
+(4,"云音乐热歌榜","https://music.163.com/#/discover/toplist?id=3778678","http://p1.music.126.net/GhhuF6Ep5Tq9IEvLsyCN7w==/18708190348409091.jpg?param=150y150");

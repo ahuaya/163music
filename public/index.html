@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/vue.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <!--head-nav-->
+  <div>
+    <div id="nav">
+      <div id="top">
+        <div id="logo">
+          <a href="#">网易云音乐</a></div>
+        <ul>
+          <li><span><a href=><em>发现音乐</em></a></span></li>
+          <li><span><a href="https://music.163.com/#/my/"><em>我的音乐</em></a></span></li>
+          <li><span><a href="https://music.163.com/#/friend"><em>朋友</em></a></span></li>
+          <li><span><a href="https://music.163.com/store/product" target="block"><em>商城</em></a></span></li>
+          <li><span><a href="https://music.163.com/nmusician/web/index" target="block"><em>音乐人</em></a></span></li>
+          <li id="ho"><span><a href="https://music.163.com/#/download" target="block"><em>下载客户端</em></a></span>
+            <span id="hot">&nbsp;</span>
+          </li>
+        </ul>
+        <div id="login"><a href="#">登录</a></div>
+        <div id="upload"><a href="#">视频投稿</a></div>
+        <div id="search"><span id="parent"><input type="text"></span></div>
+      </div>
+    </div>
+    <div id="nav2">
+      <div id="top2">
+        <div id="t">
+          <ul>
+            <li style="padding-left:0px;"><span><a href="#">推荐</a></span></li>
+            <li><span><a href="#">排行榜</a></span></li>
+            <li><span><a href="#">歌单</a></span></li>
+            <li><span><a href="#">主播电台</a></span></li>
+            <li><span><a href="#">歌手</a></span></li>
+            <li><span><a href="#">新碟上架</a></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="banner">
+      <div id="banner-box">
+        <div id="nub">
+          <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div id="banner-det">
+          <a href="#" id="pre"></a>
+          <a href="#" id="next"></a>
+          <ul id="content">
+            <li><a href="#"><img :src="res2[0].bhref" alt=""></a></li>
+            <li><a href="#"><img :src="res2[1].bhref" alt=""></a></li>
+            <li><a href="#"><img :src="res2[2].bhref" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+          </ul>
+          <div id="download">
+            <a href="#"></a>
+            <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+    <div id="main">
+      <div id="floor-1">
+        <div id="left">
+          <div id="one">
+            <span><a href="#">热门推荐</a></span>
+            <ul>
+              <li><a href="#"><em>华语</em></a><em>|</em></li>
+              <li><a href="#"><em>流行</em></a><em>|</em></li>
+              <li><a href="#"><em>摇滚</em></a><em>|</em></li>
+              <li><a href="#"><em>民谣</em></a><em>|</em></li>
+              <li><a href="#"><em>电子</em></a><em>|</em></li>
+              <li><a href="#"><em>更多</em><i>&nbsp;</i></a></li>
+            </ul>
+          </div>
+          <div id="two">
+            <ul>
+              <li>
+                <a :href="res[9].lhref">
+                  <img :src="res[9].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[9].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[1].lhref">
+                  <img :src="res[1].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[1].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[2].lhref">
+                  <img :src="res[2].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[2].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[3].lhref">
+                  <img :src="res[3].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[3].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[14].lhref">
+                  <img :src="res[14].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[14].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[5].lhref">
+                  <img :src="res[5].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[5].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[6].lhref">
+                  <img :src="res[6].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[6].ltitle}}</p>
+              </li>
+              <li>
+                <a :href="res[7].lhref">
+                  <img :src="res[7].limg" alt="">
+                </a>
+                <span><i></i><em>111</em><a></a></span>
+                <p>{{res[7].ltitle}}</p>
+              </li>
+            </ul>
+          </div>
+          <!--<div id="title">
+            <span><a href="#">个性化推荐</a></span>
+          </div>
+          <div id="three">
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>-->
+          <div id="title">
+            <span><a href="#">专辑推荐</a></span>
+          </div>
+          <div id="fore">
+            <ul>
+              <li>
+                <a :href="res1[0].ahref"><img :src="res1[0].aimg" alt=""><p>{{res1[0].aname}}</p></a>
+              </li>
+              <li>
+                <a :href="res1[1].ahref"><img :src="res1[1].aimg" alt=""><p>{{res1[1].aname}}</p></a>
+              </li>
+              <li>
+                <a :href="res1[2].ahref"><img :src="res1[2].aimg" alt=""><p>{{res1[2].aname}}</p></a>
+              </li>
+              <li>
+                <a :href="res1[3].ahref"><img :src="res1[3].aimg" alt=""><p>{{res1[3].aname}}</p></a>
+              </li>
+              <li>
+                <a :href="res1[4].ahref"><img :src="res1[4].aimg" alt=""><p>{{res1[4].aname}}</p></a>
+              </li>
+            </ul>
+          </div>
+          <div id="title">
+            <span><a href="#">榜单</a></span>
+          </div>
+          <div id="five">
+            <div id="rank">
+              <div id="lf"></div>
+              <div id="mid"></div>
+              <div id="rig"></div>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div>
+            <div id="r-login">
+              <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+              <a href="#">用户登录</a>
+            </div>
+          </div>
+          <div>
+            <div id="musicman">
+              <div id="m-ti">
+                <span>入驻歌手</span><a href="#">查看全部&gt;</a>
+              </div>
+              <div id="singer">
+                <div id="s">
+                  <a href="#">
+                    <div id="sr-h">
+                      <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    </div>
+                    <div id="sr-d">
+                      <span>张惠妹aMEI</span>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </div>
+                <div id="s">
+                  <a href="#">
+                    <div id="sr-h">
+                      <img src="http://p1.music.126.net/1EN_iqQWU_E3DafzEOh3cA==/3302932937408956.jpg?param=62y62" alt="">
+                    </div>
+                    <div id="sr-d">
+                      <span>Fine乐团</span>
+                      <p>独立音乐人</p>
+                    </div>
+                  </a>
+                </div>
+                <div id="s">
+                  <a href="#">
+                    <div id="sr-h">
+                      <img src="http://p1.music.126.net/v_zYgE9kmAwVGWV2c8hFxA==/7943971513291094.jpg?param=62y62" alt="">
+                    </div>
+                    <div id="sr-d">
+                      <span>音乐人 赵雷</span>
+                      <p>民谣歌手</p>
+                    </div>
+                  </a>
+                </div>
+                <div id="s">
+                  <a href="#">
+                    <div id="sr-h">
+                      <img src="http://p3.music.126.net/R8TtIktb_Be6UWUSfb3GxQ==/109951163444653368.jpg?param=130y130" width="62px"  alt="">
+                    </div>
+                    <div id="sr-d">
+                      <span>郭顶</span>
+                      <p>当代唱作人、词曲作者</p>
+                    </div>
+                  </a>
+                </div>
+                <div id="s-btn">
+                  <a href="#">
+                    <span>申请成为音乐人</span>
+                  </a>
+                </div>
+              </div>
+
+              <div id="dj">
+                <div id="m-ti">
+                  <span>热门主播</span>
+                </div>
+                <ul id="dj-f">
+                  <li>
+                    <a>
+                      <img src="http://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                    </a>
+                    <div>
+                      <a href="#">陈立</a>
+                      <p>心理学家、美食家陈立教授</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a>
+                      <img src="http://p1.music.126.net/y5-sM7tjnxnu_V9LWKgZlw==/7942872001461517.jpg?param=40y40" alt="">
+                    </a>
+                    <div>
+                      <a href="#">DJ艳秋</a>
+                      <p>著名音乐节目主持人</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a>
+                      <img src="http://p1.music.126.net/6cc6lgOfQTo6ovNnTHPyJg==/3427177769086282.jpg?param=40y40" alt="">
+                    </a>
+                    <div>
+                      <a href="#">国家大剧院古典音乐频道</a>
+                      <p>国家大剧院古典音乐官方</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a>
+                      <img src="http://p1.music.126.net/xa1Uxrrn4J0pm_PJwkGYvw==/3130309604335651.jpg?param=40y40" alt="">
+                    </a>
+                    <div>
+                      <a href="#">谢谢收听</a>
+                      <p>南京电台主持人王馨</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a>
+                      <img src="http://p1.music.126.net/slpd09Tf5Ju82Mv-h8MP4w==/3440371884651965.jpg?param=40y40" alt="">
+                    </a>
+                    <div>
+                      <a href="#">DJ晓苏</a>
+                      <p>独立DJ，CRI电台主持人</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="foot">
+      <div id="f-left">
+        <ul>
+          <li><a>关于网易</a><span>|</span></li>
+          <li><a>客户服务</a><span>|</span></li>
+          <li><a>服务条款</a><span>|</span></li>
+          <li><a>网站导航</a><span>|</span></li>
+          <li><a>意见反馈</a></li>
+        </ul>
+        <table style="clear:both"></table>
+        <p>网易公司版权所有©1997-2018杭州乐读科技有限公司运营：浙网文[2018]3506-263号</p>
+        <p>违法和不良信息举报电话：0571-89853516 举报邮箱：cloudmusicservice@163.com</p>
+      </div>
+      <div id="f-right">
+        <ul>
+          <li>
+            <a href="#" style="background-position: 0 0"></a>
+            <span>独立音乐人</span>
+          </li>
+          <li>
+            <a href="#" style="background-position: -60px 0"></a>
+            <span>音乐专栏</span>
+          </li>
+          <li>
+            <a href="#" style="background-position: 0 -50px"></a>
+            <span>自媒体</span>
+          </li>
+          <li>
+            <a href="#" style="background-position: -60px -50px"></a>
+            <span>赞赏</span>
+          </li>
+          <li>
+            <a href="#" style="background-position: 0 -100px"></a>
+            <span>视频奖励</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/banner.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
